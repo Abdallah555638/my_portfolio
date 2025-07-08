@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="my_logo-removebg-preview.png"  type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Abdallah Ahmed</title>
+</head>
+
+<body>
+<header>
+  <a href="#" class="Logo">
+    <img src="my_logo-removebg-preview.png" alt="logo">
+    <span class="name">Abdallah Ahmed</span>
+  </a>
+
+  <nav>
+      <a href="#about">About</a>
+      <a href="#programing">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+
+
+<section class="hero">
+  <div class="hero-content">
+    <h2>Hello, I'm Abdallah <br /><span>Digital Marketer & Web Developer</span></h2>
+    <h3>Turning Ideas into Reality</h3>
+    <a href="#projects" class="main-btn">View my work</a>
+
+    <div class="social-icones">
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-github"></i></a>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-text">
+    <h2>About Me</h2>
+    <p>
+      I'm <strong>Abdallah Ahmed</strong>, a passionate and creative <strong>Digital Marketer</strong> & <strong>Web Developer</strong> who loves turning ideas into smart, scalable solutions.
+      <br><br>
+      With a strong foundation in front-end development, I specialize in building responsive, user-friendly websites using HTML, CSS, and JavaScript. I also bring value to businesses by designing and managing effective marketing campaigns that drive engagement and conversions.
+      <br><br>
+      My mission is to help brands grow online through a unique mix of design, tech, and strategy. Whether I'm writing clean code or crafting content that connects with people — I always aim to deliver impact.
+    </p>
+    <a href="#contact" class="main-btn">Let's Work Together</a>
+  </div>
+  <div class="about-img">
+    <img src="abdallah ahmed.jpg" alt="Abdallah Profile Photo">
+  </div>
+</section>
+
+    
+<!-- ========== Programming Section ========== -->
+<section class="skills-section programming" id="programing">
+  <h2>Programming Skills</h2>
+  <div class="skills-grid">
+
+    <div class="skill-box">Html5
+      <img src="html5-removebg-preview.png" alt="html">
+    </div>
+
+    <div class="skill-box">CSS3
+      <img src="css-removebg-preview.png" alt="css">
+    </div>
+
+    <div class="skill-box">JavaScript
+      <img src="java_script-removebg-preview.png" alt="java">
+    </div>
+
+    <div class="skill-box">Boot strabe
+      <img src="bootstrape-removebg-preview.png" alt="bootstrabe">
+    </div>
+
+    <div class="skill-box">C++
+      <img src="c++-removebg-preview.png" alt="c++">
+    </div>
+
+
+    <div class="skill-box">C#
+      <img src="csh.png"  alt="c#">
+    </div>
+
+    <div class="skill-box">OOP
+      <img src="download-removebg-preview.png" alt="OOP">
+    </div>
+
+    <div class="skill-box">Data Structures
+      <img src="data.png" alt="data structures">
+    </div>
+
+    <div class="skill-box">Figma & Photoshop
+      <img src="fig.png" alt="figma">
+    </div>
+
+  </div>
+</section>
+
+<section class="skills-section marketing" id="marketing">
+  <h2>Marketing Skills</h2>
+  <div class="skills-grid">
+
+    <div class="skill-box">Social Media Management
+      <img src="sa.png" alt="social media">
+    </div>
+
+    <div class="skill-box">Community Management
+      <img src="download-removebg-preview (1).png" alt="">
+    </div>
+
+
+    <div class="skill-box">Performance Marketing
+    <img src="download-removebg-preview (2).png" alt="">
+    </div>
+
+    <div class="skill-box">Copywriting
+      <img src="download-removebg-preview (4).png" alt="">
+    </div>
+
+    <div class="skill-box">Video Editing
+    <img src="download-removebg-preview (5).png" alt="">
+    </div>
+
+    <div class="skill-box">Graphic Design
+      <img src="]download-removebg-preview (6).png" alt="">
+    </div>
+
+    <div class="skill-box">Content Creation
+      <img src="download-removebg-preview (7).png" alt="">
+    </div>
+
+    <div class="skill-box">Media Planning
+      <img src="download-removebg-preview (8).png" alt="">
+    </div>
+
+    <div class="skill-box">Content Strategy
+      <img src="download-removebg-preview (8).png" alt="">
+    </div>
+
+  </div>
+</section>
+
+
+<section class="contact" id="contact">
+  <h2>Contact Me</h2>
+  <form id="contact-form">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send via WhatsApp</button>
+  </form>
+</section>
+
+
+
+<!--scripting-->
+<script>
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    const whatsappNumber = "201101356135"; // ← رقمك بصيغة دولية
+    const text = `Hello Abdallah, I am *${name}*.\nMy Email: ${email}\n\n${message}`;
+
+    const encodedText = encodeURIComponent(text);
+    const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
+
+    window.open(whatsappLink, '_blank');
+  });
+</script>
+
+
+
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
